@@ -1,0 +1,85 @@
+<!doctype html>
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+
+  <title></title>
+  <meta name="description" content="The HTML5 Herald">
+  <meta name="author" content="SitePoint">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <link rel="stylesheet" href="css/styles.css?v=1.0">
+
+</head>
+
+<body>
+    <div class="container">
+        <div class='row'>
+            <div class = 'col-md-7'>
+                
+                <form method="POST">
+                {% csrf_token %}
+                <div class="form-group">
+                    <label for="Name" >Name</label>
+                    <input type="text" class="form-control" id="name" name ='name'>
+                </div>
+
+                <div class="form-group">
+                    <label for="Name">email</label>
+                    <input type="email" class="form-control" id="email" name ='email'>
+                </div>
+
+                <div class="form-group">
+                    <label for="Name">GITHUB PROFILE</label>
+                    <input type="link" class="form-control" id="github" name ='github'>
+                </div>
+
+
+                <div class="form-group">
+                    <label for="Name">CODING PROFILE</label>
+                    <input type="link" class="form-control" id="codingprofile" name ='codingprofile'>
+                </div>
+
+                <div class="form-group">
+                    <label for="summary">summary</label>
+                    <textarea type="text" class="form-control" id="summary" name ='summary'></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="experience">Experience</label>
+                    <textarea type="text" class="form-control" id="experience" name ='experience'></textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="phone">Phone</label>
+                    <input type="text" class="form-control" id="phone" name ='phone'>
+                </div>
+
+                <div class="form-group">
+                    <label for="degree">EDUCATION</label>
+                    <ul>
+                        <label for="degree">10th class</label>
+                        <li><input type="text" class="form-control" id="SSC" name ='SSC'></li>
+                        <label for="degree">12th class</label>
+                        <li><input type="text" class="form-control" id="HSC" name ='HSC'></li>
+                        <label for="degree">DEGREE</label>
+                        <li><input type="text" class="form-control" id="degree" name ='degree'></li>
+                        <label for="degree">UNIVERSITY</label>
+                        <li><input type="text" class="form-control" id="university" name ='university'></li>
+                    </ul>
+                    
+                </div>
+                <div class="form-group">
+                    <label for="skills">Skills</label>
+                    <input type="text" class="form-control" id="skills" name ='skills'>
+                </div>
+
+                <button type="submit" class="btn btn-primary">Submit</button>
+                <hr>
+                <a href="list/">Your cv</a>
+                </form>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>
